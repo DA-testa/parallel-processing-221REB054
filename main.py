@@ -10,7 +10,7 @@ def parallel_processing(n, m, data):
         index = thread[0]
         moment = thread[0]
         for j in range(n):
-            if thread[j] < thread[0]:
+            if thread[j] < moment:
                 index = j
                 moment = thread[index]
 
